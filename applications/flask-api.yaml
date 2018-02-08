@@ -17,3 +17,5 @@ configuration:
   postScrips:
   - cloud: aws-staging
     script: flask-install.sh
+  - cloud: kubernetes-testing
+    script: flask-install.sh
