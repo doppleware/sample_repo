@@ -1,10 +1,9 @@
 flask-install.sh
 #install git
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git
+sudo apt-get update -y
+sudo apt-get install -y git
 git clone https://github.com/doppleware/example_flask_rest_app
-pip install -r tasks/requirements.txt
+yes | pip install -r tasks/requirements.txt
 invoke app.run
 #install python
 # sudo apt-get install build-essential checkinstall
