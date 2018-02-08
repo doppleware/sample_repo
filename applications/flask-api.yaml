@@ -7,6 +7,8 @@ healthcheck:
   scripts:
   - cloud: aws-staging
     script: flask-hc.sh
+  - cloud: kubernetes-testing
+    script: flask-hc.sh
 infrastructure:
   connectivity:
     internal:
