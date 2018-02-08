@@ -1,0 +1,19 @@
+kind: application
+deploymentDefaults:
+  images:
+  - cloud: aws-staging
+    image: ami-f885609f
+healthcheck:
+  scripts:
+  - cloud: aws-staging
+    script: flask-hc.sh
+infrastructure:
+  connectivity:
+    internal:
+    - port_info:
+        path: ''
+        port: 5000
+configuration:
+  postScrips:
+  - cloud: aws-staging
+    script: flask-install.sh

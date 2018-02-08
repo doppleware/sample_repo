@@ -3,7 +3,4 @@ clouds:
 environmentType: sandbox
 kind: blueprint
 applications:
-- cs18-db
-- cs18-account-ms
-- cs18-api
-name: cs18-k8s-no-ui
+- flask-api
