@@ -1,5 +1,5 @@
 clouds:
-- kubernetes-testing
+- aws-staging
 environmentType: sandbox
 kind: blueprint
 applications:
