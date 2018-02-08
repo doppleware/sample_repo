@@ -11,9 +11,9 @@ healthcheck:
     script: flask-hc.sh
 infrastructure:
   connectivity:
-    internal:
+    external:
     - port_info:
-        path: ''
+        path: 'api/v1/'
         port: 5000
 configuration:
   postScrips:
