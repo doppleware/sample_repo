@@ -15,6 +15,9 @@ infrastructure:
     - port_info:
         path: 'api/v1/'
         port: 5000
+    - port_info:
+        path: ''
+        port: 22
 configuration:
   postScrips:
   - cloud: aws-staging
