@@ -1,9 +1,13 @@
-flask-install.sh
 #install git
+echo apt update
 sudo apt-get update -y
+echo installing git
 sudo apt-get install -y git
+echo cloning repo
 git clone https://github.com/doppleware/example_flask_rest_app
+echo installing requirements
 yes | pip install -r tasks/requirements.txt
+echo running app
 invoke app.run
 #install python
 # sudo apt-get install build-essential checkinstall
