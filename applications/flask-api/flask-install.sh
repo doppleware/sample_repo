@@ -1,10 +1,11 @@
 #install git
 echo apt update
-sudo apt-get update -y
+apt-get update -y
 echo installing git
-sudo apt-get install -y git
+apt-get install -y git
 echo cloning repo
 git clone https://github.com/doppleware/example_flask_rest_app
+cd example_flask_rest_app
 echo installing requirements
 yes | pip install -r tasks/requirements.txt
 echo running app
