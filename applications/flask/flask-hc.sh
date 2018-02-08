@@ -1,4 +1,4 @@
-
+exit 0
 #install git
 
 
