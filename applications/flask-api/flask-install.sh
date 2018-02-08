@@ -9,6 +9,7 @@ cd example_flask_rest_app
 echo installing requirements
 yes | pip install -r tasks/requirements.txt
 echo running app
+cp local_config.py.template local_config.py
 invoke app.run
 #install python
 # sudo apt-get install build-essential checkinstall
