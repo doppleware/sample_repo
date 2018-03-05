@@ -19,8 +19,9 @@ infrastructure:
         path: ''
         port: 22
 configuration:
-  postScrips:
-  - cloud: aws-staging
+  initialization:
     script: flask-install.sh
-  - cloud: kubernetes-testing
-    script: flask-install.sh
+  healthcheck:
+    script: flask-hc.sh
+  start:
+    command: invoke app.run
