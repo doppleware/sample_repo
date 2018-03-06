@@ -24,4 +24,4 @@ configuration:
   healthcheck:
     script: flask-hc.sh
   start:
-    command: invoke app.run
+    script: flask-run.sh
