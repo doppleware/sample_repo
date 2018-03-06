@@ -3,6 +3,8 @@ deploymentDefaults:
   images:
   - cloud: aws-staging
     image: ami-f885609f
+  - cloud: kubernetes-testing
+    image: ubuntu:16.04
 healthcheck:
   scripts:
   - cloud: aws-staging
