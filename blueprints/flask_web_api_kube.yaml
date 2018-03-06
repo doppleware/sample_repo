@@ -1,0 +1,9 @@
+clouds:
+- kubernetes-testing
+metadata:
+    tags:
+        - testTag: value
+environmentType: sandbox
+kind: blueprint
+applications:
+- flask-api
